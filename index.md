@@ -1,8 +1,8 @@
 ---
-title: The title has changed
+title: Home
 ---
 
-##Is this header okay?
+#Is this header okay?
 
 Once upon a time, a test was born.
 
