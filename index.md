@@ -3,7 +3,7 @@ title: Home
 ---
 
 Hi, I am Paris.
-I bring datasets to life through Business Intelligence, Data Visualisation, Storytelling, and upskilling. Together, we embed that data into strategic decision-making.
+I bring datasets to life through Business Intelligence, data visualisation, data storytelling, and staff upskilling. Together, we embed that data into strategic decision-making.
 
 With over 10 years experience across a range of industries from FMCG to Non-profit, I have a proven track record in delivering data-driven solutions that drive growth and optimisation.
 
