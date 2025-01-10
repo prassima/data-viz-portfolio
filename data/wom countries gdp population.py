@@ -1,4 +1,4 @@
-##first run the following in terminal: pip install pandas pycountry pycountry-convert
+##pip requirements: pandas pycountry pycountry-convert
 import pandas as pd
 import pycountry
 import pycountry_convert as pc
