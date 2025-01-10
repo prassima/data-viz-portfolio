@@ -1,7 +1,3 @@
----
-title: Data consultant
----
-
 Hi, I am Paris.
 I bring datasets to life through Business Intelligence, data visualisation, data storytelling, and staff upskilling. Together, we embed that data into strategic decision-making.
 
