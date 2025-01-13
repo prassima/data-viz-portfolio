@@ -2,3 +2,6 @@ theme: minima
 title: Parisra
 ##author: Made by Paris
 description: Turning data into actionable insights and optimising decision-making.
+social_links:
+  linkedin: https://www.linkedin.com/in/paris-assimacopoulos-95940416b/
+  github: https://github.com/prassima/
