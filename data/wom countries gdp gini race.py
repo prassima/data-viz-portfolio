@@ -1,4 +1,5 @@
-##first run the following in terminal: pip install pandas pycountry pycountry-convert
+#ensure all libraries are installed: in terminal (mac) or command line (win), run the following `pip install -r requirements.txt`
+#for this script, the libraries are: pandas pycountry pycountry-convert
 import pandas as pd
 import pycountry
 import pycountry_convert as pc
@@ -88,4 +89,4 @@ merged_table = merged_table.merge(race_table, left_on='Country', right_on='Count
 merged_table.drop(columns=['Gini Coefficient - World Bank','Gini Coefficient - CIA World Factbook','Data Year (World Bank)','Data Year (CIA)'], axis=1, inplace=True)
 
 # Save the updated DataFrame to a new CSV file
-merged_table.to_csv('country_data.csv', index=False)
+merged_table.to_csv('data/gdp_gini_race.csv', index=False)

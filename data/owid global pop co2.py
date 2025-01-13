@@ -1,7 +1,6 @@
-#in terminal: pip install -r requirements.txt
-
+#ensure all libraries are installed: in terminal (mac) or command line (win), run the following `pip install -r requirements.txt`
+#for this script, the libraries are: pandas requests
 import pandas as pd
-import requests
 
 # Fetch the data.
 co2 = pd.read_csv("https://ourworldindata.org/grapher/co2-emissions-by-fuel-line.csv?v=1&csvType=full&useColumnShortNames=true", storage_options = {'User-Agent': 'Our World In Data data fetch/1.0'})
@@ -16,12 +15,12 @@ pop = pd.read_csv("https://ourworldindata.org/grapher/population.csv?v=1&csvType
 pop_cleaned = pop[ (pop['Entity']=='World') & (pop['Year'] > 1800) & (pop['Year'] % 10 == 0)].copy()
 
 # Join dfs
-df = co2_cleaned.merge(pop_cleaned, on='Year', suffixes=('_co2', '_pop'))
+global_cleaned = co2_cleaned.merge(pop_cleaned, on='Year', suffixes=('_co2', '_pop'))
 
 # Calculate per capita CO2 emissions
-df['co2_per_capita'] = df['Annual CO2 emissions'] / df['population_historical']
+global_cleaned['co2_per_capita'] = global_cleaned['Annual CO2 emissions'] / global_cleaned['population_historical']
 # Drop unnecessary columns
-df.drop(columns=['Entity_co2','Entity_pop','Code_co2','Code_pop'], inplace = True)
+global_cleaned.drop(columns=['Entity_co2','Entity_pop','Code_co2','Code_pop'], inplace = True)
 
 # Create csv and sort by year
-df.sort_values('Year').to_csv('data/owid_global_pop_co2.csv', index=False)
+global_cleaned.sort_values('Year').to_csv('data/global_pop_co2.csv', index=False)
