@@ -1,6 +1,6 @@
 <h1>Hi, I am Paris.</h1>
 
-I specialise in building data-driven systems and fostering cultures of strategic decision-making, I help businesses turn information into a powerful tool for growth and optimisation.
+Specialising in building data-driven systems and fostering cultures of strategic decision-making, I help businesses turn information into a powerful tool for growth and optimisation.
 
 With over 10 years experience across diverse sectors, I have a proven track record in crafting tailored solutions that unlock potential, streamline processes, and create lasting impact. 
 
