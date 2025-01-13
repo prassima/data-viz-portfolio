@@ -1,9 +1,10 @@
 <h1>Hi, I am Paris.</h1>
-I bring datasets to life through Business Intelligence, data visualisation, data storytelling, and staff upskilling. Together, we embed that data into strategic decision-making.
 
-With over 10 years experience across a range of industries from FMCG to Non-profit, I have a proven track record in delivering data-driven solutions that drive growth and optimisation.
+I specialise in building data-driven systems and fostering cultures of strategic decision-making, I help businesses turn information into a powerful tool for growth and optimisation.
 
-I care deeply about people, and know that the insights we attain from data are only useful if the right people understand what to do about them.
+With over 10 years experience across diverse sectors, I have a proven track record in crafting tailored solutions that unlock potential, streamline processes, and create lasting impact. 
+
+Whether it’s uncovering hidden opportunities or navigating complex challenges, my approach is always centred on clarity, precision, and results.
 
 <h3>Here are a few examples of some visualisations I recently made</h3>
 
