@@ -6,7 +6,11 @@ With over 10 years experience across diverse sectors, I have a proven track reco
 
 Whether it’s uncovering hidden opportunities or navigating complex challenges, my approach is always centred on clarity, precision, and results.
 
+<br>
+<br>
 <h3>Here are a few examples of some visualisations I recently made</h3>
+<br>
+<br>
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/21093185"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21093185/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
 
