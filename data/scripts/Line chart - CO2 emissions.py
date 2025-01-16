@@ -16,4 +16,4 @@ co2_cleaned.drop(columns=['Entity','Code','emissions_from_cement','emissions_fro
 co2_cleaned.rename(columns={'emissions_from_oil' :'Oil','emissions_from_coal':'Coal','emissions_from_gas':'Gas'}, inplace=True)
 
 # Create csv and sort by year
-co2_cleaned.sort_values('Year').to_csv('data/Line chart - CO2 emissions.csv', index=False)
+co2_cleaned.sort_values('Year').to_csv('./data/output/Line chart - CO2 emissions.csv', index=False)

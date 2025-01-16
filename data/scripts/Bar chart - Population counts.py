@@ -38,7 +38,7 @@ non_country_entities = [
 ]
 
 # Filter only latest data, and exclude non countries
-pop_cleaned = pop.loc[ (pop['Year'] == 2021) & (~pop['Entity'].isin(non_country_entities) ) & (pop['Entity'].notna()) ]
+pop_cleaned = pop.loc[ (pop['Year'] == 2021) & (~pop['Entity'].isin(non_country_entities) ) & (pop['Entity'].notna()) ].copy()
 # Sort by population
 pop_cleaned.sort_values('population_historical', ascending=False, inplace=True)
 # drop irrelevant columns
@@ -46,4 +46,4 @@ pop_cleaned.drop(columns=['Code','Year'], inplace=True)
 # rename columns
 pop_cleaned.rename(columns={'Entity':'Country','population_historical':'Population 2021'}, inplace=True)
 # export only top 8 values
-pop_cleaned.head(8).to_csv('data/Bar chart - Population counts.csv', index=False)
+pop_cleaned.head(8).to_csv('./data/output/Bar chart - Population counts.csv', index=False)

@@ -87,4 +87,4 @@ merged_table = merged_table.merge(race_table, left_on='Country', right_on='Count
 merged_table.drop(columns=['Gini Coefficient - World Bank','Gini Coefficient - CIA World Factbook','Data Year (World Bank)','Data Year (CIA)'], axis=1, inplace=True)
 
 # Save the updated DataFrame to a new CSV file
-merged_table.to_csv('data/Scatter plot - GDP per capita and Gini.csv', index=False)
+merged_table.to_csv('./data/output/Scatter plot - GDP per capita and Gini.csv', index=False)
