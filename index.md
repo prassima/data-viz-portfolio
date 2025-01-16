@@ -22,6 +22,7 @@ Whether it’s uncovering hidden opportunities or navigating complex challenges,
 
 <div class="flourish-embed flourish-chart" data-src="visualisation/21114125"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21114125/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
 
+<div class="flourish-embed flourish-chart" data-src="visualisation/21161470"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21161470/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
 
 <footer>
     <p>
