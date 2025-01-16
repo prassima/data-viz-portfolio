@@ -3,3 +3,4 @@ requests
 pycountry
 pycountry-convert
 lxml
+pandas-gbq
