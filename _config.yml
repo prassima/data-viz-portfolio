@@ -1,5 +1,6 @@
 theme: minima
 title: Paris Assimacopoulos
+markdown: kramdown
 ##author: Made by Paris
 description: Turn data into actionable insights and optimise decision-making
 social_links:
