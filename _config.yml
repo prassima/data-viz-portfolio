@@ -1,7 +1,8 @@
-theme: minima
+#theme: minima
+remote_theme: mmistakes/minimal-mistakes
 title: Paris Assimacopoulos
 ##author: Made by Paris
-description: Turning data into actionable insights and optimising decision-making.
+description: Turn data into actionable insights and optimise decision-making
 social_links:
   linkedin: https://www.linkedin.com/in/paris-assimacopoulos-95940416b/
   github: https://github.com/prassima/
