@@ -1,3 +1,17 @@
+<div style="text-align: right; margin-top: -20px;">
+    <a href="mailto:parisra@pm.me" style="
+        display: inline-block;
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-decoration: none;">
+        Contact Me
+    </a>
+</div>
+
 <h1>Hi, I am Paris.</h1>
 
 Specialising in building data-driven systems and fostering cultures of strategic decision-making, I help businesses turn information into a powerful tool for growth and optimisation.
