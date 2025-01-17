@@ -1,28 +1,26 @@
 <div style="text-align: right; margin-top: -20px;">
     <a href="mailto:parisra@pm.me" style="
-        display: inline-block;
-        background-color: #007BFF;
-        color: white;
+        display: inline-flex;
+        color: #ffae00;
         padding: 10px 20px;
         font-size: 14px;
         font-weight: bold;
-        border-radius: 5px;
-        text-decoration: none;">
-        Contact Me
+        border-radius: 5px;">
+        Email me
     </a>
 </div>
 
 <h1>Hi, I am Paris.</h1>
 
-Specialising in building data-driven systems and fostering cultures of strategic decision-making, I help businesses turn information into a powerful tool for growth and optimisation.
+Specialising in building data systems, leveraging Business Intelligence, and fostering cultures of data-driven decision-making, I help organisations turn information into a powerful tool for growth and optimisation.
 
-With over 10 years experience across diverse sectors, I have a proven track record in crafting tailored solutions that unlock potential, streamline processes, and create lasting impact. 
+With over 10 years' experience across diverse sectors, I have a proven track record in crafting tailored solutions that span the entire data journey to unlock potential, streamline processes, and build organisational capacity to create lasting impact. 
 
-Whether it’s uncovering hidden opportunities or navigating complex challenges, my approach is always centred on clarity, precision, and results.
+Whether it’s uncovering hidden opportunities or navigating complex challenges, my approach is always centred on clarity, precision, collaboration, and results.
 
 <br>
 <br>
-<h3>Here are a few examples of some visualisations I recently made</h3>
+<h3>Explore my sample visualisations:</h3>
 <br>
 <br>
 
