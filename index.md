@@ -1,14 +1,9 @@
-<div style="text-align: right; margin-top: -20px;">
-    <a href="mailto:parisra@pm.me" style="
-        display: inline-flex;
-        color: #ffae00;
-        padding: 10px 20px;
-        font-size: 14px;
-        font-weight: bold;
-        border-radius: 5px;">
-        Email me
-    </a>
-</div>
+<header style="text-align: right;">
+    <p>
+        <strong>Email me</strong> 
+        <a href="mailto:parisra@pm.me">parisra@pm.me</a>
+    </p>
+</header>
 
 <h1>Hi, I am Paris.</h1>
 
