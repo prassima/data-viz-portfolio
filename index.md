@@ -1,15 +1,3 @@
-<div style="text-align: right; margin-top: -20px;">
-    <a href="mailto:parisra@pm.me" style="
-        display: inline-flex;
-        color: #ffae00;
-        padding: 10px 20px;
-        font-size: 14px;
-        font-weight: bold;
-        border-radius: 5px;">
-        Email me
-    </a>
-</div>
-
 <h1>Hi, I am Paris.</h1>
 
 Specialising in building data systems, leveraging Business Intelligence, and fostering cultures of data-driven decision-making, I help organisations turn information into a powerful tool for growth and optimisation.
