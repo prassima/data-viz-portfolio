@@ -1,3 +1,10 @@
+<header style="text-align: right;">
+    <p>
+        <strong>Email me</strong> 
+        <a href="mailto:parisra@pm.me">parisra@pm.me</a>
+    </p>
+</header>
+
 <h1>Hi, I am Paris.</h1>
 
 Specialising in building data systems, leveraging Business Intelligence, and fostering cultures of data-driven decision-making, I help organisations turn information into a powerful tool for growth and optimisation.
