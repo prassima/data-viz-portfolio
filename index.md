@@ -29,6 +29,14 @@ Whether it’s uncovering hidden opportunities or navigating complex challenges,
     </iframe>
 </div>
 <br>
+<div style="position: relative; width: 100%; max-width: 800px; padding-bottom: 75%; height: 0; overflow: hidden; margin: auto;">
+    <iframe src="https://public.tableau.com/views/Subscriberchurnanalysis/Subscriberchurnanalysis?:embed=true&:showVizHome=no" 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; max-width: 1300px; max-height: 900px; border: none;" 
+            frameborder="0" 
+            allowfullscreen>
+    </iframe>
+</div>
+<br>
 <div class="flourish-embed flourish-scatter" data-src="visualisation/21093566"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21093566/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
 <br>
 <div class="flourish-embed flourish-chart" data-src="visualisation/21111518"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21111518/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
