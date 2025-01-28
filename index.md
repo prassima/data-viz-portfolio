@@ -29,33 +29,11 @@ Whether it’s uncovering hidden opportunities or navigating complex challenges,
     </iframe>
 </div>
 <br>
-<script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
-{% raw %}
-<div class='tableauPlaceholder' id='viz1738054108100' style='position: relative; width: 1330px; margin-left: -200px;'>
-    <noscript>
-        <a href='#'>
-            <img alt='Subscriber churn analysis...' src='https://public.tableau.com/static/images/.../1_rss.png' style='border: none;' />
-        </a>
-    </noscript>
-    <object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https://public.tableau.com/' />
-        <param name='embed_code_version' value='3' />
-        <param name='name' value='Subscriberchurnanalysis/Subscriberchurnanalysis' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-    </object>
-</div>
-<script type='text/javascript'>
-    var divElement = document.getElementById('viz1738054108100');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '1330px';
-    vizElement.style.height = '930px';
-
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
-{% endraw %}
+<iframe src="https://public.tableau.com/views/Subscriberchurnanalysis/Subscriberchurnanalysis?:embed=true&:showVizHome=no"
+        style="width: 1330px; height: 930px; border: none;"
+        frameborder="0"
+        allowfullscreen>
+</iframe>
 <br>
 <div class="flourish-embed flourish-scatter" data-src="visualisation/21093566"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21093566/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
 <br>
