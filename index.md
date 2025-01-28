@@ -29,7 +29,7 @@ Whether it’s uncovering hidden opportunities or navigating complex challenges,
     </iframe>
 </div>
 <br>
-<div style="position: relative; width: 100%; max-width: 1300px; padding-bottom: 71.31%; height: 0; overflow: hidden; margin: auto;">
+<div style="position: relative; width: 100%; max-width: 1300px; padding-bottom: 75%; height: 0; overflow: hidden; margin: auto;">
     <iframe src="https://public.tableau.com/views/Subscriberchurnanalysis/Subscriberchurnanalysis?:embed=true&:showVizHome=no" 
             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
             frameborder="0" 
