@@ -31,10 +31,10 @@ Whether it’s uncovering hidden opportunities or navigating complex challenges,
 <br>
 <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
 {% raw %}
-<div class='tableauPlaceholder' id='viz1738054108100' style='position: relative'>
+<div class='tableauPlaceholder' id='viz1738054108100' style='position: relative; width: 1330px; margin-left: 60px;'>
     <noscript>
         <a href='#'>
-            <img alt='Subscriber churn analysis...' src='https://public.tableau.com/static/images/.../1_rss.png' style='border: none' />
+            <img alt='Subscriber churn analysis...' src='https://public.tableau.com/static/images/.../1_rss.png' style='border: none;' />
         </a>
     </noscript>
     <object class='tableauViz' style='display:none;'>
@@ -47,13 +47,13 @@ Whether it’s uncovering hidden opportunities or navigating complex challenges,
 </div>
 <script type='text/javascript'>
     var divElement = document.getElementById('viz1738054108100');
-var vizElement = divElement.getElementsByTagName('object')[0];
-vizElement.style.width = '1330px';
-vizElement.style.height = '930px';
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '1330px';
+    vizElement.style.height = '930px';
 
-var scriptElement = document.createElement('script');
-scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
 </script>
 {% endraw %}
 <br>
