@@ -31,7 +31,7 @@ Whether it’s uncovering hidden opportunities or navigating complex challenges,
 <br>
 <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
 {% raw %}
-<div class='tableauPlaceholder' id='viz1738054108100' style='position: relative; width: 1330px; margin-left: -60px;'>
+<div class='tableauPlaceholder' id='viz1738054108100' style='position: relative; width: 1330px; margin-left: -200px;'>
     <noscript>
         <a href='#'>
             <img alt='Subscriber churn analysis...' src='https://public.tableau.com/static/images/.../1_rss.png' style='border: none;' />
