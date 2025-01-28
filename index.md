@@ -29,12 +29,6 @@ Whether it’s uncovering hidden opportunities or navigating complex challenges,
     </iframe>
 </div>
 <br>
-<iframe src="https://public.tableau.com/views/Subscriberchurnanalysis/Subscriberchurnanalysis?:embed=true&:showVizHome=no"
-        style="width: 1330px; height: 930px; border: none;"
-        frameborder="0"
-        allowfullscreen>
-</iframe>
-<br>
 <div class="flourish-embed flourish-scatter" data-src="visualisation/21093566"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21093566/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
 <br>
 <div class="flourish-embed flourish-chart" data-src="visualisation/21111518"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21111518/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
@@ -42,7 +36,15 @@ Whether it’s uncovering hidden opportunities or navigating complex challenges,
 <div class="flourish-embed flourish-chart" data-src="visualisation/21114125"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21114125/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
 <br>
 <div class="flourish-embed flourish-chart" data-src="visualisation/21161470"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21161470/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
-
+<br>
+<div style="position: relative; width: 100%; padding-bottom: 75%; overflow: hidden; margin: auto;">
+    <iframe src="https://public.tableau.com/views/Subscriberchurnanalysis/Subscriberchurnanalysis?:embed=true&:showVizHome=no"
+            style="width: 1330px; height: 930px; border: none;"
+            frameborder="0"
+            allowfullscreen>
+    </iframe>
+</div>
+<br>
 <footer>
     <p>
         <strong>Email me</strong> 
