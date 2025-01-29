@@ -1,5 +1,5 @@
 body {
-  max-width: 1200px;
+  max-width: 1400px;
   padding-inline: 2vw;
   margin: auto;
   font-size: 18px;
@@ -38,6 +38,10 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
+}
+
+#inequity-embed {
+  grid-column: span 2;
 }
 
 @media screen and (min-width: 950px) {
