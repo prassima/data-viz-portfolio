@@ -1,3 +1,9 @@
+:root {
+  --max-page-width: 1600px;
+  --gutter: 2vw;
+  --muted-maroon: 188,160,164;
+  --mahogany: 159,106,84;
+}
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,22 +16,42 @@ html {
 }
 body {
   font-size: 18px;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(238,229,205);
+  color: rgb(48,95,72);
+  margin: 0;
 }
 header {
+  width: 100%;
+  background-color: rgb(238,229,205);
+  box-shadow: 0 2px 4px rgba(209,202,195,0.4);
+  color: rgb(49,65,54);
+}
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 1vh 2vw;
+  max-width:var(--max-page-width);
+  margin: auto;
+  padding: 2.5vh var(--gutter);
 }
-header .contact {
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.contact {
+  color: rgba(var(--mahogany), 0.75);
+  text-decoration: none;
   font-weight: bold;
   position: relative;
   padding: 0.5em 1em;
+  transition: color 0.3s
 }
-
-header .contact::before {
+.contact:hover {
+  color: rgba(var(--mahogany), 1);
+}
+.contact::before {
   content: "";
   position: absolute;
   left: 0;
@@ -34,58 +60,48 @@ header .contact::before {
   width: 0;
   transition: width 0.3s;
 }
-header .contact::after {
+.contact::after {
   content: "Send Email";
   position: absolute;
+  font-size: 0.9em;
   top: 105%;
-  left: -10%;
+  left: -20%;
   opacity: 0;
   transition: left 0.3s, opacity 0.15s;
 }
-header .contact:hover::before {
+.contact:hover::before {
   width: 100%;
 }
-header .contact:hover::after{
+.contact:hover::after{
   opacity: 1;
-  left: 0.75em;
+  left: 1em;
 }
+
 main {
-  max-width: 1400px;
-  padding-inline: 2vw;
+  max-width: var(--max-page-width);
+  padding: 3.3vh var(--gutter);
   margin: auto;
 }
 
-footer {
-  text-align: center;
-  padding-block: 3em;
-}
-h1 {
-  text-align: center;
-  margin-block: 1em;
-}
 h2 {
   margin-block: 2em 1.5em;
 }
 main p {
-  max-width: 62ch;
+  max-width: 64ch;
   margin: auto;
 }
-a {
-  color: #ffb145;
-  text-decoration: none;
-}
-a:hover {
-  color: #b3490c;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-
 #inequity-embed {
   grid-column: span 2;
+}
+
+footer {
+  text-align: center;
+  padding-block: 3em;
 }
 
 @media screen and (min-width: 950px) {
