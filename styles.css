@@ -87,15 +87,22 @@ h2 {
   margin-block: 2em 1.5em;
 }
 main p {
-  max-width: 64ch;
+  width: clamp(250px, 100%, 64ch);
   margin: auto;
 }
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 }
-#inequity-embed {
+.grid-item p,
+.grid-item ul {
+  padding: 2em;
+  font-size: 2em;
+  max-width: 32ch;
+}
+.grid-item__full-width {
   grid-column: span 2;
 }
 
@@ -107,6 +114,7 @@ footer {
 @media screen and (min-width: 950px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 4rem 3rem;
+    align-items: center;
   }
 }
