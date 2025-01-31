@@ -41,15 +41,15 @@ header h1 {
 }
 
 .contact {
-  color: rgba(var(--mahogany), 0.75);
+  color: rgba(var(--mahogany), 1);
   text-decoration: none;
-  font-weight: bold;
   position: relative;
   padding: 0.5em 1em;
-  transition: color 0.3s
+  transition: color 0.3s;
+  font-size: 1.2em;
 }
 .contact:hover {
-  color: rgba(var(--mahogany), 1);
+  color: rgba(var(--mahogany), 0.6);
 }
 .contact::before {
   content: "";
@@ -57,24 +57,30 @@ header h1 {
   left: 0;
   bottom: 0;
   border-bottom: 2px solid currentColor;
-  width: 0;
+  width: 100%;
   transition: width 0.3s;
 }
 .contact::after {
-  content: "Send Email";
+  content: "Send Email →";
+  text-transform: uppercase;
+  font-weight: bold;
   position: absolute;
-  font-size: 0.9em;
-  top: 105%;
-  left: -20%;
+  font-size: 0.75em;
+  top: 75%;
+  right: -50%;
   opacity: 0;
-  transition: left 0.3s, opacity 0.15s;
+  transition: right 0.3s, opacity 0.15s;
+  color: rgba(var(--mahogany), 1)
 }
 .contact:hover::before {
-  width: 100%;
+  width: 0;
 }
 .contact:hover::after{
   opacity: 1;
-  left: 1em;
+  right: 0;
+}
+footer .contact:hover::after {
+  right: 8%;
 }
 
 main {
