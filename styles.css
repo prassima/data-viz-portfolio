@@ -92,7 +92,7 @@ header h1 {
 footer .contact:hover::after {
   right: 8%;
 }
-
+/*can probably consolidate the `contact`, `sample-viz` and `go-home` classes into a unified `header a` one*/
 .sample-viz {
   color: rgba(var(--colour-cheek-red), 1);
   text-decoration: none;
@@ -184,7 +184,7 @@ h2 {
   color: rgb(var(--colour-fly-by-night));
 }
 main p {
-  font-size: 28px;
+  font-size: 25px;
   width: clamp(250px, 100%, 64ch);
   margin: auto;
 }
@@ -221,3 +221,4 @@ footer {
     align-items: center;
   }
 }
+
