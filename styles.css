@@ -92,6 +92,31 @@ header h1 {
 footer .contact:hover::after {
   right: 8%;
 }
+
+/* Dynamic Text  */
+#dynamic-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 5vh;
+}
+#dynamic-text .container {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+#dynamic-text .dynamic {
+  display: inline-block;
+  transition: opacity 0.5s ease-in-out;
+}
+#dynamic-text .fade-out {
+  opacity: 0;
+}
+#dynamic-text .fade-in {
+  opacity: 1;
+}
+/* End of Dynamic Text */
+
 /*can probably consolidate the `contact`, `sample-viz` and `go-home` classes into a unified `header a` one*/
 .sample-viz {
   color: rgba(var(--colour-cheek-red), 1);
