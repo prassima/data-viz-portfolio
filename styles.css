@@ -234,6 +234,39 @@ main p {
   grid-column: span 2;
 }
 
+p a {
+  color: rgb(var(--colour-fly-by-night));
+  transition: color 0.3s;
+}
+
+p a:hover {
+  color: rgb(var(--colour-cheek-red));
+}
+
+p a:visited {
+  color: rgb(var(--colour-worcestershire-sauce));
+}
+
+table {
+  border-collapse: collapse;
+  width: auto;
+  height: auto;
+  margin: 20px 0;
+  width: clamp(250px, 100%, 50ch);
+  margin: auto;
+  font-size: smaller;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 1px; 
+  text-align: center;
+}
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
 footer {
   text-align: center;
   padding-block: 3em;
