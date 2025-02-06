@@ -56,7 +56,7 @@ where event_name = 'page_view'
 order by 1, 2
 """
 
-project_id = "one-data-warehouse" ##adjust accordingly
+project_id = "dummy-name-bq" ##adjust accordingly
 
 
 df = read_gbq(query, project_id=project_id)
