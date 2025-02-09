@@ -251,14 +251,15 @@ main {
   max-width: var(--max-page-width);
   padding: 3.3vh var(--gutter);
   margin: auto;
+  font-size: 1.5em;
 }
 
 h2 {
   margin-block: 2em 1.5em;
   color: rgb(var(--colour-fly-by-night));
+  font-size: 1.2em;
 }
 main p {
-  font-size: 1.25em;
   width: clamp(250px, 100%, 64ch);
   margin: auto;
 }
@@ -277,7 +278,6 @@ main p {
 .grid-item ul {
   padding: 2em;
   max-width: 32ch;
-  font-size: 1.33em;
 }
 .grid-item__full-width {
   grid-column: span 2;
@@ -304,7 +304,7 @@ table {
   margin: 20px 0;
   width: clamp(250px, 100%, 50ch);
   margin: auto;
-  font-size: smaller;
+  font-size: 0.66em;
 }
 
 th, td {
