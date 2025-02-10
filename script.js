@@ -50,7 +50,7 @@ function cycleSentences() {
           index = (index + 1) % sentences.length;
       }
       updateText();
-  }, 3000);
+  }, 3900);
 }
 
 window.onload = cycleSentences;
