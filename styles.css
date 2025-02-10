@@ -41,7 +41,7 @@ header {
   align-items: center;
   max-width:var(--max-page-width);
   margin: auto;
-  padding: 2.5vh var(--gutter);
+  padding: min(2.5vh, 2vw) var(--gutter);
   font-size: 1em;
 }
 header h1 {
@@ -90,9 +90,6 @@ header h1 {
   opacity: 1;
   right: 0;
 }
-footer .contact:hover::after {
-  right: 8%;
-}
 
 /* Contact button */
 .contact-button {
@@ -108,16 +105,14 @@ footer .contact:hover::after {
   position: relative; /* For pseudo-element animations */
   overflow: hidden; /* Hide overflow for pseudo-element */
 }
-
-/* Hover effect */
+  /* Hover effect */
 .contact-button:hover {
   background-color: darken(rgb(var(--colour-fly-by-night)), 10%); /* Darken the background on hover */
   transform: translateY(-3px); /* Slight lift effect */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
   color: rgb(var(--colour-fly-by-night));
 }
-
-/* Optional: Add a pseudo-element for a cool hover animation */
+  /* Optional: Add a pseudo-element for a cool hover animation */
 .contact-button::after {
   content: '';
   position: absolute;
@@ -130,14 +125,11 @@ footer .contact:hover::after {
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.5s ease;
 }
-
 .contact-button:hover::after {
   transform: translate(-50%, -50%) scale(1); /* Expand the circle on hover */
 }
-
-/* Optional: Add a focus effect for accessibility */
+  /* Optional: Add a focus effect for accessibility */
 .contact-button:focus {
-  outline: none; /* Remove default outline */
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Add a focus ring */
 }
 /*End of Contact Button*/
@@ -319,15 +311,19 @@ th {
 
 footer {
   text-align: center;
-  padding-block: 3em;
+  margin-block: 3em;
 }
-
 footer a {
   text-decoration: none;
 }
-
-footer img {
-  margin: 0 10px;
+footer .contact:hover::after {
+  right: 8%;
+}
+footer .socials-container {
+  padding-block: 4vh;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
 @media screen and (max-width: 600px) {
