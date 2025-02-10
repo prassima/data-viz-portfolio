@@ -106,7 +106,6 @@ footer .contact:hover::after {
   cursor: pointer; /* Change cursor to pointer on hover */
   transition: all 0.3s ease; /* Smooth transition for hover effects */
   position: relative; /* For pseudo-element animations */
-  overflow: hidden; /* Hide overflow for pseudo-element */
 }
 
 /* Hover effect */
