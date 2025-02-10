@@ -93,45 +93,52 @@ header h1 {
 
 /* Contact button */
 .contact-button {
-  background-color: rgb(var(--colour-fly-by-night)); /* Use your custom color */
+  background-color: rgb(var(--colour-fly-by-night));
   text-decoration: none;
-  color: rgb(var(--colour-cauliflower)); /* Use your custom text color */
-  padding: 0.5em 1em; /* Adjust padding for size */
-  font-size: 1.2em; /* Adjust font size */
-  font-weight: bold; /* Make the text bold */
-  border-radius: 5px; /* Slightly rounded corners */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-  position: relative; /* For pseudo-element animations */
-  overflow: hidden; /* Hide overflow for pseudo-element */
+  color: rgb(var(--colour-cauliflower));
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
-  /* Hover effect */
-.contact-button:hover {
-  background-color: darken(rgb(var(--colour-fly-by-night)), 10%); /* Darken the background on hover */
-  transform: translateY(-3px); /* Slight lift effect */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+
+/* Hover & focus effects */
+.contact-button:hover,
+.contact-button:focus {
   color: rgb(var(--colour-fly-by-night));
+  background-color: rgba((var(--colour-cauliflower), 0.75));
+  transform: translateX(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-  /* Optional: Add a pseudo-element for a cool hover animation */
+
+/* Sliding background effect */
 .contact-button::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  transition: transform 0.5s ease;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  clip-path: inset(0 0 0 100%); /* Initially hidden */
+  transition: clip-path 0.3s ease-in-out;
 }
-.contact-button:hover::after {
-  transform: translate(-50%, -50%) scale(1); /* Expand the circle on hover */
+
+/* Reveal effect */
+.contact-button:hover::after,
+.contact-button:focus::after {
+  clip-path: inset(0 0 0 0); /* Fully visible */
 }
-  /* Optional: Add a focus effect for accessibility */
+
+/* Accessibility: Focus ring */
 .contact-button:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Add a focus ring */
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
 }
+
 /*End of Contact Button*/
 
 /* Dynamic Text  */
@@ -269,7 +276,8 @@ main p {
 .grid-item p,
 .grid-item ul {
   padding: 2em;
-  max-width: 32ch;
+  max-width: 64ch;
+  margin: auto;
 }
 .grid-item__full-width {
   grid-column: span 2;
@@ -311,7 +319,7 @@ th {
 
 footer {
   text-align: center;
-  margin-block: 3em;
+  margin-block: 3em 2em;
 }
 footer a {
   text-decoration: none;
@@ -320,10 +328,19 @@ footer .contact:hover::after {
   right: 8%;
 }
 footer .socials-container {
-  padding-block: 4vh;
+  padding-block-start: 4vh;
   display: flex;
   justify-content: center;
   gap: 25px;
+}
+footer .socials-container a img {
+  transition: transform 0.22s ease;
+}
+footer .socials-container a:first-of-type:hover img {
+  transform: scale(1.1) translateX(-1px);
+}
+footer .socials-container a:nth-of-type(2):hover img {
+  transform: scale(1.1) translateX(1px);
 }
 
 @media screen and (max-width: 600px) {
@@ -343,5 +360,9 @@ footer .socials-container {
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem 3rem;
     align-items: center;
+  }
+  .grid-item p,
+  .grid-item ul {
+    max-width: 32ch;
   }
 }
