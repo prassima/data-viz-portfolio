@@ -337,6 +337,22 @@ th {
   opacity: 1;
 }
 
+.tableau-iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 75%; /* 4:3 aspect ratio (adjust as needed) */
+  border: none;
+}
+
+.tableau-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 footer {
   text-align: center;
   margin-block: 3em 2em;
