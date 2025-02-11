@@ -355,6 +355,8 @@ footer .socials-container {
 }
 footer .socials-container a img {
   transition: transform 0.22s ease;
+  width: 2.5em;
+  height: 2.5em;
 }
 footer .socials-container a:first-of-type:hover img {
   transform: scale(1.1) translateX(-1px);
