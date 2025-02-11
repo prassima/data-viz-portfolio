@@ -142,16 +142,16 @@ header h1 {
 
 /* Dynamic Text  */
 #dynamic-text {
-  display: flex;
+  /*display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center;*/
   padding-block: 5vh;
   width: clamp(250px, 100%, 64ch);
   margin: auto;
 }
 #dynamic-text .container {
-  text-align: left;
-  font-size: 1.5em;
+  text-align: center;
+  font-size: 1.1em;
   font-weight: bold;
 }
 #dynamic-text .dynamic {
