@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   
       // Start the carousel
-      setInterval(showNextItem, 3000);
+      setInterval(showNextItem, 4000);
     });
   });
