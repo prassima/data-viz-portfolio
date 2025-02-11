@@ -257,6 +257,8 @@ h2 {
   margin-block: 2em 1.5em;
   color: rgb(var(--colour-fly-by-night));
   font-size: 1.2em;
+  border-top: 1.2px dotted rgb(var(--colour-charcoal));
+  padding-top: 10vh;
 }
 main p {
   width: clamp(250px, 100%, 64ch);
