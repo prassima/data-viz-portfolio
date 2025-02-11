@@ -167,7 +167,6 @@ header h1 {
 }
 /* End of Dynamic Text */
 
-/*can probably consolidate the `contact`, `sample-viz` and `go-home` classes into a unified `header a` one*/
 .sample-viz {
   color: rgba(var(--colour-cheek-red), 1);
   text-decoration: none;
@@ -348,6 +347,12 @@ footer .socials-container a:nth-of-type(2):hover img {
 @media screen and (max-width: 600px) {
   .header-container {
     font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .sample-viz::before {
+    width: 70%; /*reduce the length of the bottom border line for mobile*/
   }
 }
 
