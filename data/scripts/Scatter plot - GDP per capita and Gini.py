@@ -24,7 +24,7 @@ manual_continent_mapping = {
     'Micronesia': 'Oceania'
 }
 
-# Function to map countries to continents
+# Function to map countries to continents. (Note: this was relevant for a separate project, and have kept in case)
 def get_continent(country_name):
     # Check in manual mapping first
     if country_name in manual_continent_mapping:
@@ -71,13 +71,13 @@ gini = pd.read_html(gini_url)
 # The 3rd table is the one we want
 gini_table = gini[2]
 
-# Get racist countries
+# Get countries benefiting from racist world
 race_url = 'https://worldpopulationreview.com/country-rankings/caucasian-countries'
 race = pd.read_html(race_url)
 # We want 2nd table
 race_table = race[1]
-# Add column to identify racist countries, and drop continent
-race_table['Majority white']=True
+# Add column to identify majority white countries, and drop continent
+race_table["Majority 'white' country"]=True
 race_table.drop(columns=['Continent'], axis=1, inplace=True)
 
 # Merge the various DataFrames on the 'Country' column
