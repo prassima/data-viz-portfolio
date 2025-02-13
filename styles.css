@@ -435,10 +435,13 @@ footer .socials-container a img {
   height: 2.5em;
 }
 footer .socials-container a:first-of-type:hover img {
-  transform: scale(1.1) translateX(-1px);
+  transform: scale(1.1) translateX(-2px);
 }
 footer .socials-container a:nth-of-type(2):hover img {
-  transform: scale(1.1) translateX(1px);
+  transform: scale(1.1);
+}
+footer .socials-container a:nth-of-type(3):hover img {
+  transform: scale(1.1) translateX(2px);
 }
 
 @media screen and (max-width: 600px) {
