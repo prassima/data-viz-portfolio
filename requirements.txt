@@ -4,3 +4,6 @@ pycountry
 pycountry-convert
 lxml
 pandas-gbq
+google-cloud-bigquery
+google-auth
+python-dotenv
