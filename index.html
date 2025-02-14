@@ -3,20 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="dynamic-text.js" async></script>
+    <!-- Preload CSS and apply once loaded -->
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles.css">
+    </noscript>
+    <link rel="preload" href="dynamic-text.js" as="script">
+
   <title>Paris Assimacopoulos | Data Consultant</title>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Paris Assimacopoulos | Data Consultant">
+  <meta property="og:description" content="Portfolio of data visualisations">
+  <meta property="og:image" content="/images/logos/logo.jpeg">
+  <meta property="og:url" content="https://prassima.github.io/insights-consultant/samples.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
 </head>
 <body>
   <header>
     <div class="header-container">
-        <a class="sample-viz" href="samples.html">Data viz</a>
-        <h1>Paris Assimacopoulos</h1>
-        <a class="contact" href="mailto:parisra@pm.me">Contact</a>
+      <a class="sample-viz" href="samples.html">Data viz</a>
+      <h1>Paris Assimacopoulos</h1>
+      <a class="contact" href="mailto:parisra@pm.me">Contact</a>
     </div>
-</header>
+  </header>
 
-<main>
+  <main>
 
   <div id="dynamic-text">
     <div class="container">
@@ -33,10 +51,10 @@
     <br>
     <br>With over 10 years' experience across <strong class="key-words">International Development, FMCG, and Non-profit</strong> sectors, I craft tailored solutions that span the entire data journey to unlock potential, streamline processes, and build organisational capacity to create lasting impact. 
     </p>
-</main>
+  </main>
 
-<footer>
-    <a class="contact" href="mailto:parisra@pm.me">Let's Chat</a>
+  <footer>
+      <a class="contact" href="mailto:parisra@pm.me">Let's Chat</a>
     <div class="socials-container">
       <a href="https://github.com/prassima" target="_blank" rel="noopener noreferrer">
         <img src="images/github-mark.svg" alt="GitHub Logo">
@@ -48,6 +66,8 @@
         <img src="images/tableau-mark.svg" alt="Tableau Logo">
       </a>
     </div>
-</footer>
+  </footer>
+
+  <script src="dynamic-text.js" async></script>
 </body>
 </html>
