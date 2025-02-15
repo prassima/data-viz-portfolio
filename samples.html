@@ -3,18 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="accordion.js" async></script>
-  <title>Paris Assimacopoulos | Sample visualisations</title>
+    <!-- Preload CSS and apply once loaded -->
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles.css">
+    </noscript>
+    <link rel="preload" href="accordion.js" as="script">
+
+  <title>Paris Assimacopoulos | Sample Visualisations</title>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Paris Assimacopoulos | Sample visualisations">
+  <meta property="og:description" content="Explore my sample data viz visualisations and view the scripts I created to scrape and transform the data">
+  <meta property="og:image" content="/images/logos/logo.jpeg">
+  <meta property="og:url" content="https://prassima.github.io/insights-consultant/samples.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicons/site.webmanifest">
 </head>
 <body>
   <header>
     <div class="header-container">
-        <a class="go-home" href="index.html">Home</a>
-        <h1>Sample visualisations</h1>
-        <a class="contact" href="mailto:parisra@pm.me">Contact</a>
+      <a class="go-home" href="index.html">Home</a>
+      <h1>Sample visualisations</h1>
+      <a class="contact" href="mailto:parisra@pm.me">Contact</a>
     </div>
-</header>
+  </header>
 <main>
     <br><br>
     <div>
@@ -242,7 +260,7 @@
                 document.addEventListener("DOMContentLoaded", function () {
                     var divElement = document.getElementById('viz1739280423246');
                     var vizElement = divElement.getElementsByTagName('object')[0];
-                    if (divElement.offsetWidth > 800) {
+                    if (divElement.offsetWidth > 850) {
                         vizElement.style.width = '100%';
                         vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
                     } else if (divElement.offsetWidth > 500) {
@@ -250,7 +268,7 @@
                         vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
                     } else {
                         vizElement.style.width = '100%';
-                        vizElement.style.height = (divElement.offsetWidth * 1.77) + 'px';
+                        vizElement.style.height = (divElement.offsetWidth * 1.0) + 'px';
                     }
                     var scriptElement = document.createElement('script');
                     scriptElement.async = true;
@@ -335,5 +353,6 @@
         </a>
     </div>
 </footer>
+<script src="accordion.js" async></script>
 </body>
 </html>
