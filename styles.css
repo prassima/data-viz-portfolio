@@ -446,26 +446,7 @@ footer .socials-container a:nth-of-type(3):hover img {
 
 @media screen and (max-width: 600px) {
   .header-container {
-    font-size: 0.625em;
-  }
-}
-
-/*shimmer effect so user attention drawn to clicking on Sample Viz header*/
-@keyframes shimmer {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.66;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .sample-viz{
-    animation: shimmer 2.5s infinite;
+    font-size: 0.6em;
   }
 }
 
