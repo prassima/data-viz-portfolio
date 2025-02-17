@@ -187,7 +187,7 @@ header h1 {
   transition: width 0.3s cubic-bezier(0, 0.98, 0.57, 1.24) 100ms;
 }
 .sample-viz::after {
-  content: "Samples →";
+  content: "See more →";
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
