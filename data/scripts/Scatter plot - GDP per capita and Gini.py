@@ -56,14 +56,9 @@ for row in western_table.find_all("tr")[1:]:  # Skip the header row
 
 # Create a DataFrame
 western = pd.DataFrame(rows)
-western.rename(columns=
-          {0: 'Country', 
-           1: 'Latin West', 
-           2: 'Cold War West', 
-           3: 'Rich West', 
-           4: 'Western Europe', 
-           5: 'Western Hemisphere'},
-          inplace=True)
+# update column names
+western_cols = {0:'Country',1:'Latin West',2:'Cold War West',3:'Rich West',4:'Western Europe',5:'Western Hemisphere'}
+western.rename(columns=western_cols, inplace=True)
 
 
 # Merge the various DataFrames on the 'Country' column
@@ -71,7 +66,10 @@ merged_table = gdp_table.merge(gini_table, left_on='Country', right_on='Country'
 merged_table['Gini coefficient']=merged_table['Gini Coefficient - World Bank'].fillna(merged_table['Gini Coefficient - CIA World Factbook'])
 merged_table = merged_table.merge(race_table, left_on='Country', right_on='Country', how='left')
 merged_table = merged_table.merge(western, left_on='Country', right_on='Country', how='left')
-merged_table.fillna(False, inplace=True)
+#fillna with False
+merged_table.loc[:, ['Latin West', 'Cold War West', 'Rich West', 'Western Europe', 'Western Hemisphere']] = (
+    merged_table[['Latin West', 'Cold War West', 'Rich West', 'Western Europe', 'Western Hemisphere']].fillna(False)
+)
 merged_table.drop(columns=['Gini Coefficient - World Bank','Gini Coefficient - CIA World Factbook','Data Year (World Bank)','Data Year (CIA)'], axis=1, inplace=True)
 merged_table["Majority 'white' country"]=merged_table["Majority 'white' country"].fillna(False)
 
