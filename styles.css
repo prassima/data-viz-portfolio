@@ -517,7 +517,7 @@ footer .socials-container a:nth-of-type(3):hover img {
 
 @media screen and (max-width: 426px) {
   .sample-viz::before {
-    width: 70%; /*reduce the length of the bottom border line for mobile*/
+    width: 90%; /*reduce the length of the bottom border line for mobile*/
   }
 }
 
