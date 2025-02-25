@@ -7,6 +7,6 @@ function toggleServices() {
         button.textContent = 'Explore my services';
     } else {
         section.classList.add('expanded');
-        button.textContent = 'Collapse services';
+        button.textContent = 'Services';
     }
 }
