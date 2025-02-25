@@ -260,6 +260,11 @@ h2 {
   border-top: 1.2px dotted rgb(var(--colour-charcoal));
   padding-top: 10vh;
 }
+
+h3 {
+  color: rgba(var(--colour-cheek-red), 0.9);
+}
+
 main p {
   width: clamp(250px, 100%, 64ch);
   margin: auto;
@@ -411,6 +416,66 @@ th {
 
 .bounce-neighbor {
   animation: bounceNeighbor 0.5s ease;
+}
+
+.expand-button {
+  display: block;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background: rgb(var(--colour-cheek-red));
+  color: rgb(var(--colour-cauliflower));
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expand-button:hover {
+  background: rgba(var(--colour-cheek-red), 0.9);
+  transform: translateY(-2px);
+}
+
+.services-section {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services-section.expanded {
+  max-height: 1000px; /* Adjust based on content height */
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: var(--max-page-width);
+  margin: 0 auto;
+  padding: 2rem var(--gutter);
+}
+
+.service-card {
+  background: rgba(var(--colour-beauty-and-the-beach), 0.1);
+  border-radius: 1em;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 1200px) {
+  .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+      grid-template-columns: 1fr;
+  }
 }
 
 footer {
