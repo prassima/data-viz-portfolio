@@ -8,60 +8,58 @@
   <script src="services-button.js" async></script>
   <title>Paris Assimacopoulos | Data Consultant</title>
 </head>
-<body>
+<body class="home">
   <header>
     <div class="header-container">
-        <a class="sample-viz" href="samples.html">Samples</a>
-        <h1>Paris Assimacopoulos</h1>
-        <a class="contact" href="mailto:parisra@pm.me">Contact</a>
+      <a class="sample-viz" href="samples.html">Data viz</a>
+      <h1>Paris <br>Assimacopoulos</h1>
+      <a class="contact" href="mailto:parisra@pm.me">Contact</a>
     </div>
 </header>
-
-<main>
-
-  <div id="dynamic-text">
-    <div class="container">
-        <div>
-            A data <span id="identity" class="dynamic"></span>
-            <br>
-            <span id="action1" class="dynamic"></span>
+  <main>
+    <section class="intro-section">
+      <p>Specialising in building data systems, leveraging <strong class="key-words">Business Intelligence</strong>, and fostering cultures of <strong class="key-words">data-driven decision-making</strong>, I help organisations turn information into a powerful tool for growth and optimisation.</p>
+      <br>
+      <p>With over 10 years' experience across <strong class="key-words">International Development, FMCG, and Non-profit</strong> sectors, I craft tailored solutions that span the entire data journey to unlock potential, streamline processes, and build organisational capacity to create lasting impact.</p>
+      <hr>
+    </section>
+    <section class="dynamic-section">
+      <p class="dynamic-text-preamble">Another way to say all of this is that I am: </p>
+      <div id="dynamic-text">
+        <div class="container">
+            <div>A data <span id="identity" class="dynamic"></span>&nbsp;<span id="action1" class="dynamic"></span></div>
+            <div id="action2" class="dynamic"></div>
         </div>
-        <div id="action2" class="dynamic"></div>
-    </div>
-  </div>
+      </div>
+    </section>
 
-    <p>Specialising in building <strong class="key-words">digital data systems</strong>, leveraging accessible <strong class="key-words">Business Intelligence</strong>, and fostering cultures of <strong class="key-words">data-driven decision-making</strong>, I help organisations turn information into a powerful tool for growth and optimisation.
-    <br>
-    <br>With over 10 years' experience across FMCG, International Development, and Non-profit sectors, I craft tailored solutions that  <strong class="key-words">span the entire data journey</strong> to unlock potential, streamline processes, and build organisational capacity to create lasting impact. 
-    </p>
-</main>
+    <button class="expand-button" onclick="toggleServices()">Explore my services</button>
 
-<button class="expand-button" onclick="toggleServices()">Explore my services</button>
+    <!-- Hidden services section -->
+    <section class="services-section" id="servicesSection">
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Data Analytics & Visualisation</h3>
+                <p>Interactive dashboards and reports that democratise insights and empower stakeholders to act decisively</p>
+            </div>
+            <div class="service-card">
+                <h3>Data Strategy & Governance</h3>
+                <p>Robust frameworks for data accuracy and compliance to achieve strategic objectives</p>
+            </div>
+            <div class="service-card">
+                <h3>Machine Learning Solutions</h3>
+                <p>AI-powered forecasting and workflow automation</p>
+            </div>
+            <div class="service-card">
+                <h3>Data Literacy Training</h3>
+                <p>Tailored training in tools and data storytelling</p>
+            </div>
+        </div>
+    </section>
+  </main>
 
-<!-- Hidden services section -->
-<section class="services-section" id="servicesSection">
-    <div class="services-grid">
-        <div class="service-card">
-            <h3>Data Analytics & Visualisation</h3>
-            <p>Interactive dashboards and reports that democratise insights and empower stakeholders to act decisively</p>
-        </div>
-        <div class="service-card">
-            <h3>Data Strategy & Governance</h3>
-            <p>Robust frameworks for data accuracy and compliance to achieve strategic objectives</p>
-        </div>
-        <div class="service-card">
-            <h3>Machine Learning Solutions</h3>
-            <p>AI-powered forecasting and workflow automation</p>
-        </div>
-        <div class="service-card">
-            <h3>Data Literacy Training</h3>
-            <p>Tailored training in tools and data storytelling</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <a class="contact" href="mailto:parisra@pm.me">Let's Chat</a>
+  <footer><dfn></dfn>
+      <a class="contact" href="mailto:parisra@pm.me">Let's Chat</a>
     <div class="socials-container">
       <a href="https://github.com/prassima" target="_blank" rel="noopener noreferrer">
         <img src="images/github-mark.svg" alt="GitHub Logo">

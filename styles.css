@@ -14,9 +14,6 @@
   --colour-shadows: 101, 114, 104;
   --colour-fly-by-night: 71, 96, 102;
 }
-.samples {
-  --content-width: 1600px; /* Change content width on samples page only */
-}
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -252,7 +249,7 @@ p.dynamic-text-preamble {
 }
 
 main {
-  max-width: var(--content-width);
+  max-width: var(--site-width);
   padding: 7.5vh var(--gutter) 4vh;
   margin: auto;
   font-size: 1.5em;
@@ -277,6 +274,11 @@ main p {
 
 main hr {
   margin-block: 8vh;
+}
+main .intro-section,
+main .dynamic-section {
+  width: min(100%, var(--content-width));
+  margin: auto;
 }
 
 .key-words {
