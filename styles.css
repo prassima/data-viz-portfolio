@@ -1,6 +1,7 @@
 :root {
   --max-page-width: 1600px;
   --gutter: 2vw;
+  --content-width: 54ch;
   /* Colours */
   --colour-charcoal: 49,65,54;
   --colour-cauliflower: 238, 229, 205;
@@ -12,6 +13,9 @@
   --colour-antique: 131, 132, 105;
   --colour-shadows: 101, 114, 104;
   --colour-fly-by-night: 71, 96, 102;
+}
+.samples {
+  --content-width: 1600px; /* Change content width on samples page only */
 }
 html {
   -webkit-box-sizing: border-box;
@@ -41,7 +45,7 @@ header {
   align-items: center;
   max-width:var(--max-page-width);
   margin: auto;
-  padding: min(2.5vh, 2vw) var(--gutter);
+  padding: min(2.5vh, 2vw) calc(var(--gutter) * 2);
   font-size: 1em;
 }
 header h1 {
@@ -141,18 +145,19 @@ header h1 {
 /*End of Contact Button*/
 
 /* Dynamic Text  */
+p.dynamic-text-preamble {
+  margin-block-end: 1em;
+  font-size: 0.9em;
+}
 #dynamic-text {
-  /*display: flex;
-  justify-content: flex-start;
-  align-items: center;*/
-  padding-block: 5vh;
-  width: clamp(250px, 100%, 64ch);
-  margin: auto;
+  padding: 5vh 3vw;
+  margin-inline: auto;
+  background-color: rgb(var(--colour-fly-by-night));
+  color: rgb(var(--colour-cauliflower));
+  border-radius: 5px;
 }
 #dynamic-text .container {
-  text-align: center;
-  font-size: 1.1em;
-  font-weight: bold;
+  font-size: 1em;
 }
 #dynamic-text .dynamic {
   display: inline-block;
@@ -247,8 +252,8 @@ header h1 {
 }
 
 main {
-  max-width: var(--max-page-width);
-  padding: 3.3vh var(--gutter);
+  max-width: var(--content-width);
+  padding: 7.5vh var(--gutter) 4vh;
   margin: auto;
   font-size: 1.5em;
 }
@@ -266,8 +271,12 @@ h3 {
 }
 
 main p {
-  width: clamp(250px, 100%, 64ch);
   margin: auto;
+  line-height: 1.5;
+}
+
+main hr {
+  margin-block: 8vh;
 }
 
 .key-words {
@@ -512,6 +521,7 @@ footer .socials-container a:nth-of-type(3):hover img {
 @media screen and (max-width: 600px) {
   .header-container {
     font-size: 0.6em;
+    padding-inline: calc(var(--gutter) * 3);
   }
 }
 
