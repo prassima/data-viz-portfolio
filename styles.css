@@ -1,6 +1,7 @@
 :root {
   --max-page-width: 1600px;
   --gutter: 2vw;
+  --content-width: 54ch;
   /* Colours */
   --colour-charcoal: 49,65,54;
   --colour-cauliflower: 238, 229, 205;
@@ -41,7 +42,7 @@ header {
   align-items: center;
   max-width:var(--max-page-width);
   margin: auto;
-  padding: min(2.5vh, 2vw) var(--gutter);
+  padding: min(2.5vh, 2vw) calc(var(--gutter) * 2);
   font-size: 1em;
 }
 header h1 {
@@ -248,7 +249,7 @@ header h1 {
 
 main {
   max-width: var(--max-page-width);
-  padding: 3.3vh var(--gutter);
+  padding: 7.4vh var(--gutter) 4vh;
   margin: auto;
   font-size: 1.5em;
 }
@@ -512,6 +513,7 @@ footer .socials-container a:nth-of-type(3):hover img {
 @media screen and (max-width: 600px) {
   .header-container {
     font-size: 0.6em;
+    padding-inline: calc(var(--gutter) * 3);
   }
 }
 
