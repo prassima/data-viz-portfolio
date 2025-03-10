@@ -7,7 +7,7 @@
 <ul>
 <li>Download the .py files contained within the <code>/data/scripts/</code> directory, as well as the <code>requirements.txt</code> file</li>
 <li>Ensure you have python installed locally. For ease, I recommend using <a href= https://docs.anaconda.com/miniconda/install/#quick-command-line-install>miniconda</a></li>
-<li>Create virtual environment and install appropriate packages and libraries. To do this, run the following in terminal, with current directory set to where you have downloaded the .py and requiremnts.txt files:</li>
+<li>Create virtual environment and install appropriate packages and libraries. To do this, run the following in terminal, with current directory set to where you have downloaded the .py and requirements.txt files:</li>
   <ul>
   <li><code>conda create -n myenv</code> (I have used a generic name, myenv, but feel free to adjust)</li>
   <li><code>conda activate myenv</code></li>
