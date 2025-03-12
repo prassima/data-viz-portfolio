@@ -262,8 +262,12 @@ h2 {
   padding-top: 10vh;
 }
 
-h3 {
+.service-card h2 {
   color: rgba(var(--colour-cheek-red), 0.9);
+  font-size: 1.15em;
+  margin-block-start: auto;
+  border-top: none;
+  padding-top: 1em;
 }
 
 main p {
